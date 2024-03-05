@@ -1,0 +1,14 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Roboto", sans-serif;
+  }
+
+  
+html {
+    background: linear-gradient( to right,#2E3192, #1BFFFF);
+    background-repeat: no-repeat;
+   
+  }

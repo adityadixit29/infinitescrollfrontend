@@ -1,0 +1,337 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,300&display=swap");
+
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Roboto", sans-serif;
+}
+
+// @import "features";
+// @import "header";
+// @import "login";
+// @import "mediaquery";
+
+// a {
+//   text-decoration: none;
+//   color: $color3;
+// }
+
+// .home {
+//   text-align: center;
+//   .heading {
+//     @include styledText(2rem, 100, uppercase);
+//     padding-top: 10vmax;
+//   }
+
+//   p {
+//     margin: 2rem 0;
+//     font-weight: 900;
+//   }
+// }
+// .todosContainer {
+//   @include flexBox(column, center, flex-start);
+//   @include fill;
+//   @include container(900px, unset, 3rem 0);
+// }
+
+// .todo {
+//   background-color: $color2;
+//   border-radius: 5px;
+
+//   @include flexBox(row, center, space-between);
+//   width: 100%;
+//   padding: 2rem;
+//   > div:last-of-type {
+//     @include flexBox(row);
+//   }
+
+//   input {
+//     width: 2rem;
+//     height: 2rem;
+//   }
+// }
+
+// .loader {
+//   @include defaultStyle;
+//   @include flexBox(column, center, center);
+//   @include styledText(2rem, 100, uppercase);
+//   overflow-x: hidden;
+//   width: 100vw;
+//   height: 100vh;
+// }
+
+// .btn {
+//   @include styledText;
+//   @include myButton;
+// }
+// .container {
+//   @include defaultStyle;
+//   padding: 5rem 2rem;
+//   background-color: $color4;
+// }
+
+
+html {
+  background: linear-gradient( to right,#2E3192, #1BFFFF);
+  background-repeat: no-repeat;
+ 
+}
+
+.login {
+  // border: 2px solid red;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px;
+  color: white;
+  height: 545px;
+
+}
+
+.login>section {
+  
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  >.heading {
+    display: flex;
+  }
+
+  >form {
+    border-radius: 8px;
+    display: grid;
+    width: 300px;
+    border: 2px solid black;
+    padding: 20px;
+    height: 450px;
+    background-color: #1D1F33;
+
+    >.login-btn {
+      background-color: #07a991;
+      color: #36394D;
+      border-radius: 8px;
+      border: none;
+    }
+
+    >.signup {
+      display: flex;
+      justify-content: space-between;
+
+      >.left {
+        font-size: small;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      >.right {
+        display: flex;
+
+        >.register {
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+          font-size: small;
+          color: #07a991;
+        }
+      }
+    }
+    > .box1{
+      align-items: center;
+      > img{
+        width: 20px;
+      }
+    }
+    > .box2{
+      > img{
+        width: 20px;
+      }
+    }
+    > .profilephoto{
+      display: flex;
+        justify-content: center;
+        align-items: center;
+      > img{
+        width: 99px;
+        
+      }
+    }
+    >.heading {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      // margin-bottom: 30px;
+      border: none;
+      position: relative;
+
+      // background-color: #07a991;
+      >p {
+        background-color: #07a991;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 150px;
+        padding: 20px 10px;
+        position: absolute;
+        top: -50px;
+        color: #36394D;
+      }
+    }
+
+    >.box1, .box2, >input {
+      display: flex; /* Add this line to use flexbox for alignment */
+      align-items: center;
+      border-radius: 8px;
+      border: none;
+      margin-bottom: 10px;
+      background-color: #292B3D;
+      color: white;
+      padding: 5px;
+    // background: none;
+    outline: none;
+    border: none;
+      > img{
+        margin-bottom: 0px;
+        padding-right: 5px;
+        border-right: 2px solid #7c7c83;
+      }
+
+      &::placeholder {
+        color: #ffffff;
+      }
+    }
+
+    .box1{
+      input{
+        background: none;
+        border: none;
+        padding: 10px;
+        width: 100%;
+        color: white;
+      }
+    }
+    .box2{
+      input{
+        background: none;
+        border: none;
+        padding: 10px;
+        width: 100%;
+        color:white
+      }
+    }
+
+  }
+}
+
+.table {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  padding: 44px;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  
+}
+
+.tableContainer {
+  // border: 2px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.tableContainer table th {
+  background-color: #f2f2f2;
+  color: #292B3D;
+  padding: 16px;
+  border-top-left-radius: 8px; 
+  border-top-right-radius: 8px; 
+  font-weight:500;
+}
+
+.tableContainer tbody th,
+.tableContainer tbody td {
+  padding: 12px;
+  text-align: center;
+  border-top: 1px solid #ddd; 
+}
+
+.tableContainer tbody tr:hover {
+  background-color: #f5f5f5;
+  border-radius: 8px;
+}
+
+tbody > tr > td > img{
+  width: 15px;
+  margin-left: 5px;
+}
+
+
+.header{
+  // border: 2px solid red;
+  padding: 15px;
+  background-color: white;
+  > article{
+    display: flex;
+    justify-content: space-between;
+    > .homebtn{
+      color: #292B3D;
+      border: 2px solid;
+      padding: 8px 10px;
+      text-decoration: none;
+      border-radius: 5px;
+      background-color: #b9b9b9;
+      border: none;
+      cursor: pointer;
+      font-weight: 600;
+    }
+    > .btn{
+      padding: 8px 10px;
+      outline: none;
+      border: none;
+      background-color: red;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: 600;
+    }
+  }
+}
+
+.card-container {
+  width: 300px;
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+  margin-right: 10px;
+  height: 20vh;
+}
+
+.card-heading {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-message {
+  font-size: 16px;
+  color: #333;
+}
